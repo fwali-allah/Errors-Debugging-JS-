@@ -1,12 +1,9 @@
 // STARTER CODE
 
 function calculateTotal(numbers) {
- let total = 0;
- for (let i = 0; i <= numbers.length; i++) { // BUG: <= causes undefined
-   total += numbers[i];
- }
- return total;
-}
+ return numbers.reduce((total, num) => total + num, 0);
+ 
+  }
 
 const data1 = [1, 2, 3];
 const data2 = [4, 5, 6];
